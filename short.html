@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fa" class="bg-amber-500">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اس ام لینک-کوتاه کننده لینک</title>
+    <link href="./dist/style.css" rel="stylesheet">
+</head>
+<body dir="rtl">
+   <div class="w-screen h-screen flex justify-center">
+        <div class="flex flex-col items-center mt-20 bg-white w-min lg:w-4/6 h-min rounded-md p-4">
+            <h1 class="Dmikh">لینک شما با موفقیت کوتاه شد</h1>
+            
+            <div class="bg-gray-100 flex p-1 mt-4 w-5/6 lg:w-2/4 justify-center rounded-md border-2 border-amber-300">
+                <button onclick="copyit()" class="w-1/6 lg:w-1/12 flex justify-center hover:text-amber-700 text-amber-500 m-2 border-l-2 border-amber-300 border-dashed">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                      </svg>
+
+                </button>
+                <div class="w-5/6 lg:w-11/12 flex items-center">
+                    <a href="http://nightcode.dev" class="p-1 mikh text-center w-full text-amber-500 hover:text-amber-700">nightcode.dev</a>
+                </div>
+            </div>
+            <a href="/" class="bg-amber-500 flex w-min h-min p-2 mt-2 text-white mikh items-center rounded-md hover:bg-amber-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                  <span>بازگشت</span>
+            </a>
+            <div class="my-8">
+                <div class="border-t-2 border-dashed border-amber-500 p-4 text-center">
+                    <h1 class="Bmikh">با <p class="text-amber-500 inline">اس ام لینک</p> می تواند لینک های خود را به کوتاه ترین حالت ممکن درآورید</h1>
+                    <div class='mr-2 flex justify-center mt-2 p-2'>
+                        <div class=' p-2 text-center font-bold text-md mikh text-amber-400 ml-2 bg-amber-100 rounded-md'>رایگان</div>
+                        <div class=' p-2 text-center font-bold text-md mikh text-amber-400 ml-2 bg-amber-100 rounded-md'>نامحدود</div>
+                        <div class=' p-2 text-center font-bold text-md mikh text-amber-400 ml-2 bg-amber-100 rounded-md'>سریع</div>
+                        <div class=' p-2 text-center font-bold text-md mikh text-amber-400 ml-2 bg-amber-100 rounded-md'>ساده</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div> 
+   <script>
+    var copyit = ()=>{
+        var link = document.getElementsByTagName('a')[0]
+        navigator.clipboard.writeText(link.innerHTML)
+    }
+   </script>
+</body>
+</html>
